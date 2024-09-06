@@ -5,7 +5,7 @@ on: [push]
 jobs:
   build:
     name: Build minimuxer
-    if: startsWith(github.event.head_commit.message, '[build]')
+    # if: startsWith(github.event.head_commit.message, '[build]')
     concurrency:
       group: ${{ github.ref }}
       cancel-in-progress: true
